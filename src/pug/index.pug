@@ -1,0 +1,180 @@
+include blocks/head-service/head
+include common/mixins
+include common/js
+
+
+body
+	header.header
+		.container
+			.header-wrap
+				a(href="https://www.ulmart.ru/", target="_blank")
+					img(src="img/ulmart-logo-white.png", alt="logo")
+				//- a(href="https://www.ulmart.ru/", target="_blank") Перейти к покупкам на ulmart.ru
+				.header-text_wrap
+					h1.header-text_title Важные аксессуары для идеальных поездок
+					p.header-text_desc Мало выбрать хороший велосипед — нужно подготовить его к любым сюрпризам на дороге. Чтобы любая ваша поездка доставляла максимум удовольствия и минимум проблем, рассказываем о самых нужных велосипедных аксессуарах. Прокачайте своего железного друга — и вперёд, к приключениям!
+	section.bicycle
+		.container
+			.row
+				.col-xs-7
+					.bicycle-btn_wrap
+						button.bicycle-btn.tab Аксессуары
+						button.bicycle-btn.tab2 Экипировка
+						button.bicycle-btn.active-b.tab3 Запчасти
+					.bicycle-wrap
+						.bicycle-accessories.none
+							img(src="img/main_bicycle.png", alt="")
+						.bicycle-equipment.none
+							img(src="img/main_bicycle2.png", alt="")
+						.bicycle-parts.tab3
+							img(src="img/main_bicycle3.png", alt="")
+							a.bicycle-ico.url(href='#one')
+							a.bicycle-ico.url(href='#two')
+							a.bicycle-ico.url(href='#three')
+							a.bicycle-ico.url(href='#four')
+							a.bicycle-ico.url(href='#five')
+				.col-xs-5
+					.owl-carousel.owl-theme(style="width: 360px;margin: 0 auto;")
+						.item(data-hash="one")
+							a(href="#")
+								img(src="http://via.placeholder.com/360x250", alt="")
+							h4.carousel-title  Lorem ipsum.
+							p.carousel-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, minima!
+							a.carousel-btn(href="#") 1
+
+						.item(data-hash="two")
+							a(href="#")
+								img(src="http://via.placeholder.com/360x250", alt="")
+							h4.carousel-title  2Lorem ipsum.
+							p.carousel-text  2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, minima!
+							a.carousel-btn(href="#") 2
+						.item(data-hash="three")
+							a(href="#")
+								img(src="http://via.placeholder.com/360x250", alt="")
+							h4.carousel-title  3Lorem ipsum.
+							p.carousel-text  3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, minima!
+							a.carousel-btn(href="#") 3
+						.item(data-hash="four")
+							a(href="#")
+								img(src="http://via.placeholder.com/360x250", alt="")
+							h4.carousel-title  4Lorem ipsum.
+							p.carousel-text  4Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, minima!
+							a.carousel-btn(href="#") 4
+						.item(data-hash="five")
+							a(href="#")
+								img(src="http://via.placeholder.com/360x250", alt="")
+							h4.carousel-title  5Lorem ipsum.
+							p.carousel-text  5Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, minima!
+							a.carousel-btn(href="#") 5
+	section.help
+		.container
+			.help-wrap
+				h3.help-title Ещё не подобрали себе велосипед?  
+					small.help-title_small Отправьте ваши пожелания и мы подберем его для вас!
+				a(href="#" class="help-btn") Отправить
+
+	section.access
+		.container
+			h2.access-title Дополнительные аксессуары
+			.row
+				.col-xs-3 
+					.access-card
+						img(src="http://via.placeholder.com/210x210", alt="")
+						h3.access-card_title Велоинструменты
+						a.access-card_btn(href="#") Выбрать
+				.col-xs-3 
+					.access-card
+						img(src="http://via.placeholder.com/210x210", alt="")
+						h3.access-card_title Велоинструменты
+						a.access-card_btn(href="#") Выбрать
+
+				.col-xs-3 
+					.access-card
+						img(src="http://via.placeholder.com/210x210", alt="")
+						h3.access-card_title Велоинструменты
+						a.access-card_btn(href="#") Выбрать
+
+				.col-xs-3 
+					.access-card
+						img(src="http://via.placeholder.com/210x210", alt="")
+						h3.access-card_title Велоинструменты
+						a.access-card_btn(href="#") Выбрать
+			.row
+				.col-xs-3 
+					.access-card
+						img(src="http://via.placeholder.com/210x210", alt="")
+						h3.access-card_title Велоинструменты
+						a.access-card_btn(href="#") Выбрать
+				.col-xs-3 
+					.access-card
+						img(src="http://via.placeholder.com/210x210", alt="")
+						h3.access-card_title Велоинструменты
+						a.access-card_btn(href="#") Выбрать
+
+				.col-xs-3 
+					.access-card
+						img(src="http://via.placeholder.com/210x210", alt="")
+						h3.access-card_title Велоинструменты
+						a.access-card_btn(href="#") Выбрать
+
+				.col-xs-3 
+					.access-card
+						img(src="http://via.placeholder.com/210x210", alt="")
+						h3.access-card_title Велоинструменты
+						a.access-card_btn(href="#") Выбрать
+
+			a.access-btn(href="#") Смотреть все велоаксессуары
+
+		//- +top-line()
+		//- +top-banner-out()
+		//- section.block__example
+		//- 	.container
+		//- 		.row
+		//- 			h1.title  Lorem ipsum dolor sit amet.
+		//- 			.title__desc  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci possimus nesciunt enim. Inventore neque, pariatur consequuntur repellendus totam numquam molestias quidem, recusandae, natus accusamus doloribus quasi eum. Excepturi, possimus!
+
+	section.advice
+		.container
+			h3.advice-title Советы по подбору
+			.row
+				.col-xs-4
+					.advice-card
+						img(src="http://via.placeholder.com/250x250", alt="").advice-card_img
+						h3.advice-card_title Велофляга
+						p.advice-card_text Насос, выполняя свою функцию, будет иметь сразу 2 назначения, во-первых, им можно будет накачать колесо, после того, как Вы его пробили и заклеили, а, во-вторых, и можно подкачать колёса перед поездкой, а это рекомендуется делать практически каждый раз.
+						a(href="#").advice-card_btn Смотреть велофляги
+				.col-xs-4
+					.advice-card
+						img(src="http://via.placeholder.com/250x250", alt="").advice-card_img
+						h3.advice-card_title Велофляга
+						p.advice-card_text Насос, выполняя свою функцию, будет иметь сразу 2 назначения, во-первых, им можно будет накачать колесо, после того, как Вы его пробили и заклеили, а, во-вторых, и можно подкачать колёса перед поездкой, а это рекомендуется делать практически каждый раз.
+						a(href="#").advice-card_btn Смотреть велофляги
+				.col-xs-4
+					.advice-card
+						img(src="http://via.placeholder.com/250x250", alt="").advice-card_img
+						h3.advice-card_title Велофляга
+						p.advice-card_text Насос, выполняя свою функцию, будет иметь сразу 2 назначения, во-первых, им можно будет накачать колесо, после того, как Вы его пробили и заклеили, а, во-вторых, и можно подкачать колёса перед поездкой, а это рекомендуется делать практически каждый раз.
+						a(href="#").advice-card_btn Смотреть велофляги
+			.row
+				.col-xs-4
+					.advice-card
+						img(src="http://via.placeholder.com/250x250", alt="").advice-card_img
+						h3.advice-card_title Велофляга
+						p.advice-card_text Насос, выполняя свою функцию, будет иметь сразу 2 назначения, во-первых, им можно будет накачать колесо, после того, как Вы его пробили и заклеили, а, во-вторых, и можно подкачать колёса перед поездкой, а это рекомендуется делать практически каждый раз.
+						a(href="#").advice-card_btn Смотреть велофляги
+				.col-xs-4
+					.advice-card
+						img(src="http://via.placeholder.com/250x250", alt="").advice-card_img
+						h3.advice-card_title Велофляга
+						p.advice-card_text Насос, выполняя свою функцию, будет иметь сразу 2 назначения, во-первых, им можно будет накачать колесо, после того, как Вы его пробили и заклеили, а, во-вторых, и можно подкачать колёса перед поездкой, а это рекомендуется делать практически каждый раз.
+						a(href="#").advice-card_btn Смотреть велофляги
+				.col-xs-4
+					.advice-card
+						img(src="http://via.placeholder.com/250x250", alt="").advice-card_img
+						h3.advice-card_title Велофляга
+						p.advice-card_text Насос, выполняя свою функцию, будет иметь сразу 2 назначения, во-первых, им можно будет накачать колесо, после того, как Вы его пробили и заклеили, а, во-вторых, и можно подкачать колёса перед поездкой, а это рекомендуется делать практически каждый раз.
+						a(href="#").advice-card_btn Смотреть велофляги
+	+footer()
+
+
+	include blocks/footer-service/footer-service

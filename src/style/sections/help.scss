@@ -1,0 +1,33 @@
+.help{ 
+  background-color: #1e1e1e;
+  padding: 1.5rem 0;
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-title {
+    color: $fff;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    &_small {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+  &-btn {
+    color: $fff;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    border-radius: 1.563rem;
+    border: 0.063rem solid $fff;
+    padding: 1rem 6rem;
+    &:hover{
+      background-color: #fff;
+      color: #000;
+    }
+  }
+
+}
