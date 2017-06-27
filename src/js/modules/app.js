@@ -37,13 +37,3 @@ tab3.addEventListener("click", function(event){
 });
 
 
-// var ico = document.querySelector('.bicycle-ico');
-
-
-// ico.addEventListener("click", function(event){
-//     event.preventDefault();
-//     console.log('qwe');
-//     // ico.classList.add("bicycle-ico-active");
-//     document.querySelector('.bicycle-ico').style.background='url(./img/ico-active.png)';
-// });
-

@@ -1,4 +1,4 @@
-.header{
+.header {
   background: #003BBF url(../img/header-bg.png) repeat-y;
   background-size: cover;
   &-wrap{
@@ -9,10 +9,12 @@
     background: url(../img/header-man.png) no-repeat;
     background-position: right top;
   }
+  &-logo{
+    padding: 0 5px;
+  }
   &-text_wrap{
     max-width:  471px;
-    padding-top: 6.5rem;
-    padding-bottom: 6.5rem;
+    padding: 6.5rem 0;
   }
   &-text_title{
     color: $fff;

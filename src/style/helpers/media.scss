@@ -47,7 +47,49 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.owl-theme .owl-nav [class*=owl-] {
+		display: none !important;
+	}
+	.header {
+		&-text_wrap {
+			padding: 6.5rem 5px;
+		}
+	}
+	.bicycle {
+		&-wrap {
+			display: none !important;
+		}
+		&-btn_wrap  {
+			display: none !important;
+		}
+	}
+	.help {
+		padding: 1.5rem 1rem;
+		&-title {
+			line-height: 2.2rem;
+		}
+	}
+	.access {
+		&-title {
+			text-align: center;
+			font-size: 2.2rem;
+			line-height: 1;
+		}
+	}
+	.advice {
+		padding: 0;
+		&-title {
+			text-align: center;
+			padding: 2rem 5px 2rem;
+			line-height: 1;
+		}
+	}
+	.footer {
+		&-text {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	}
 }
 
 /* Custom, iPhone Retina */

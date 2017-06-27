@@ -3,7 +3,7 @@
   padding: 3.5rem 0 3rem;
   &-wrap {
     height: 600px;
-    padding-top: 40px;
+    padding-top: 20px;
   }
   &-btn {
     border-radius: 1.563rem;
@@ -14,26 +14,28 @@
     line-height: 1.5rem;
     padding: 12px 0;
     margin-left: 25px;
+    margin-bottom: 20px;
     width: 170px;
     display: inline-block;
     text-align: center;
     border: 0.063rem solid #ddd;
     background-color: #fff;
     outline: none;
-    &:hover{
+    &:hover {
       cursor: pointer
     }
+    &_wrap {
+      text-align: center;
+    }
   }
-  &-parts {
-    a {
-       background: url(../img/ico-plus.png) no-repeat;
-       width: 28px;
-       height: 28px;
-       display: inline-block;
-       position: relative;
-       &:focus{
-        background: url(../img/ico-active.png) no-repeat;
-       }
+  &-ico {
+     background: url(../img/ico-plus.png) no-repeat;
+     width: 28px;
+     height: 28px;
+     display: inline-block;
+     position: relative;
+     &:focus {
+      background: url(../img/ico-active.png) no-repeat;
      }
   }
 }
@@ -61,8 +63,8 @@
 .owl-theme .owl-nav [class*=owl-]{
   background: #004ed0 !important;
   position: absolute;
-  top: 6rem;
-  font-size: 0;
+  top: 10rem;
+  font-size: 0 !important;
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -91,14 +93,15 @@
   font-size: 40px;
   font-weight: 500;
   margin-top: 25px;
-  margin-bottom: 35px;
+  line-height: 1;
+  height: 6rem;
 }
 
 .carousel-text {
   font-size: 16px;
   color: #1e1e1e;
   line-height: 1.5;
-  margin-bottom: 35px;
+  height: 10rem;
 }
 
 .carousel-btn {
@@ -110,8 +113,35 @@
   font-weight: 500;
   line-height: 1.5rem;
   padding: 12px 0;
-  width: 360px;
-  display: inline-block;
+  max-width: 360px;
+  display: block;
   text-align: center;
+  &:hover {
+    opacity: .8;
+  }
 }
 
+.carousel-counter {
+  color: #1e1e1e;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  small {
+    font-size: 14px;
+    position: relative;
+    top: -8px
+  }
+}
+.owl-carousel .owl-item img {
+  width: 250px !important;
+  margin: 0 auto;
+}
+
+.owl-dots{
+  display: none;
+}
