@@ -63,10 +63,22 @@
 			display: none !important;
 		}
 	}
+	.carousel {
+		&-title {
+			padding: 0 5px;
+		}
+		&-text {
+			padding: 0 5px;
+		}
+		&-counter {
+			padding: 0 5px;
+		}
+	}
 	.help {
 		padding: 1.5rem 1rem;
 		&-title {
-			line-height: 2.2rem;
+			line-height: 1.6rem;
+			padding-bottom: 10px;
 		}
 	}
 	.access {
@@ -82,6 +94,12 @@
 			text-align: center;
 			padding: 2rem 5px 2rem;
 			line-height: 1;
+		}
+		&-card_text {
+			padding: 0 5px;
+		}
+		&-card_title {
+			padding: 15px 5px 0;
 		}
 	}
 	.footer {
