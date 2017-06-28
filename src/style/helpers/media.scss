@@ -90,19 +90,23 @@
 	}
 	.advice {
 		padding: 0;
+		&-card_info {
+			padding: 0
+		}
 		&-title {
 			text-align: center;
 			padding: 2rem 5px 2rem;
 			line-height: 1;
 		}
 		&-card_text {
-			padding: 0 5px;
-		}
-		&-card_text2 {
-			padding: 0 5px;
+			padding-left: 5px;
+			padding-right: 5px;
 		}
 		&-card_title {
-			padding: 15px 5px 0;
+			padding: 15px 5px 10px;
+		}
+		&-card_btn {
+			margin: 0 auto;
 		}
 	}
 	.footer {

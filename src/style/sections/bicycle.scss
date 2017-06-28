@@ -1,10 +1,6 @@
 .bicycle {
   background-color: #fff;
   padding: 3.5rem 0 3rem;
-  &-wrap {
-    height: 600px;
-    padding-top: 20px;
-  }
   &-btn {
     border-radius: 1.563rem;
     color: #c2c2c2;
@@ -25,17 +21,149 @@
       cursor: pointer
     }
     &_wrap {
-      text-align: center;
+      // text-align: center;
     }
   }
+  &-accessories {
+      background: url(../img/main_bicycle.jpg) center bottom no-repeat;
+      height: 586px;
+  }
+  &-equipment {
+      background: url(../img/main_bicycle2.jpg) center bottom no-repeat;
+      height: 586px;
+  }
+  &-parts {
+      background: url(../img/main_bicycle3.jpg) center bottom no-repeat;
+      height: 586px;
+  }
   &-ico {
-     background: url(../img/ico-plus.png) no-repeat;
-     width: 28px;
-     height: 28px;
+     background: url(../img/ico-active.png) no-repeat;
+     width: 43px;
+     height: 53px;
      display: inline-block;
      position: relative;
      &:focus {
-      background: url(../img/ico-active.png) no-repeat;
+      background: url(../img/ico-plus.png) no-repeat;
+     }
+     &_1 {
+        top: 222px;
+        left: 250px;
+     }
+     &_2 {
+        top: 110px;
+        left: 389px;
+     }
+     &_3 {
+        top: 170px;
+        right: 13px;
+     }
+     &_4 {
+        top: 467px;
+        right: 32px;
+     }
+     &_5 {
+        top: 324px;
+        right: 189px;
+       
+     }
+     &_6 {
+       top: 110px;
+       left: 355px;
+     }
+     &_7 {
+        top: 119px;
+        left: 205px;
+     }
+     &_8 {
+        top: 315px;
+        right: 30px;
+     }
+     &_9 {
+        top: 125px;
+        left: 151px;
+     }
+     &_10 {
+        top: 245px;
+        right: 5px;
+     }
+     &_11 {
+        top: 275px;
+        right: 80px;
+     }
+     &_12 {
+        top: 57px;
+     }
+     &_13 {
+        top: 220px;
+        right: 62px;
+     }
+     &_14 {
+        top: 388px;
+        right: 390px;
+     }
+     &_15 {
+        top: 30px;
+        left: 490px;
+     }
+     &_16 {
+        top: 180px;
+        left: 458px;
+     }
+     &_17 {
+        top: 50px;
+        left: 370px;
+     }
+     &_18 {
+        top: 182px;
+        left: 77px;
+     }
+     &_19 {
+        top: 218px;
+        left: 108px;
+     }
+     &_20 {
+        top: 135px;
+        left: 430px;
+     }
+     &_21 {
+        top: 102px;
+        left: 425px;
+     }
+     &_22 {
+        top: 490px;
+        right: 50px;
+     }
+     &_23 {
+        top: 193px;
+        left: 390px;
+     }
+     &_24 {
+        top: 155px;
+        right: 20px;
+     }
+     &_25 {
+        top: 390px;
+        left: 130px;
+     }
+     &_26 {
+        top: 492px;
+     }
+     &_27 {
+        top: 258px;
+        left: 280px;
+     }
+     &_28 {
+        top: 130px;
+        right: 111px;
+     }
+     &_29 {
+        top: 405px;
+        right: 296px;
+     }
+     &_30 {
+        top: 380px;
+        right: 250px;
+        
      }
   }
 }
@@ -139,8 +267,9 @@
   }
 }
 .owl-carousel .owl-item img {
-  width: 250px !important;
+  width: 270px !important;
   margin: 0 auto;
+  height: 222px !important
 }
 
 .owl-dots{

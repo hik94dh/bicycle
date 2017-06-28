@@ -16,29 +16,29 @@ body
 	section.bicycle
 		.container
 			.row
-				.col-xs-12.col-sm-7
+				.col-xs-12.col-sm-8
 					.bicycle-btn_wrap
 						button.bicycle-btn.tab Аксессуары
 						button.bicycle-btn.tab2 Экипировка
 						button.bicycle-btn.active-b.tab3 Запчасти
 					.bicycle-wrap
 						.bicycle-accessories.none
-							img(src="img/main_bicycle.jpg", alt="")
-							each item, number in data.slice(0,12)
+							each item, number in data.slice(0,14)
 								+icons(item)
 						.bicycle-equipment.none
-							img(src="img/main_bicycle2.png", alt="")
-							each item, number in data.slice(12,25)
-								+icons(item)
+							each item, number in data_b.slice(0,4)
+								+icons_b(item)
 						.bicycle-parts.tab3
-							img(src="img/main_bicycle3.jpg", alt="")
-							each item, number in data.slice(25,31)
-								+icons(item)
-				.col-xs-12.col-sm-5
+							each item, number in data_c.slice(0,12)
+								+icons_c(item)
+				.col-xs-12.col-sm-4
 					.owl-carousel.owl-theme(style="max-width: 360px;margin: 0 auto;")
-						each item, number in data.slice(0,31)
+						each item, number in data.slice(0,14)
 							+carousel-item(item)
-
+						each item, number in data_b.slice(0,4)
+							+carousel-item_b(item)
+						each item, number in data_c.slice(0,12)
+							+carousel-item_c(item)
 
 	section.help
 		.container
@@ -56,20 +56,16 @@ body
 				each item, number in data2.slice(0,4)
 					+access(item)
 			.row
-				each item, number in data2.slice(4,6)
+				each item, number in data2.slice(4,7)
 					+access(item)
 
 			a.access-btn(href="#") Смотреть все велоаксессуары
 
 	section.advice
 		.container
-			h3.advice-title Советы по подбору
-			.row
-				each item, number in data3.slice(0,4)
-					+advice(item)
-			.row
-				each item, number in data3.slice(4,8)
-					+advice(item)
+			h3.advice-title Советы по подбору аксессуаров
+			each item, number in data3.slice(0,8)
+				+advice(item)
 	+footer()
 
 
