@@ -1,19 +1,19 @@
 .header {
-  background: #003BBF url(../img/header-bg.png) repeat-y;
+  background: #003BBF url(../img/banner-top.jpg) repeat-y;
   background-size: cover;
   &-wrap{
     // display: flex;
     // justify-content: space-between;
     // align-items: center;
     padding-top: 14px;
-    background: url(../img/header-man.png) no-repeat;
+    // background: url(../img/header-man.png) no-repeat;
     background-position: right top;
   }
   &-logo{
     padding: 0 5px;
   }
   &-text_wrap{
-    max-width:  471px;
+    max-width:  468px;
     padding: 6.5rem 0;
   }
   &-text_title{
@@ -22,13 +22,18 @@
     font-weight: 300;
     line-height: 3.063rem;
     padding-bottom: 2rem;
-    font-family: 'PFBeauSansPro-Light', sans-serif;
+    font-family: 'pf_beausans_prolight', sans-serif;
+    span {
+      font-weight: bold;
+    }
   }
   &-text_desc{
     color: $fff;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.375rem;
+    max-width:  370px;
+    line-height: 24px;
   }
 
 }

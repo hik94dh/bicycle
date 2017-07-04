@@ -11,12 +11,14 @@ body
 					img(src="img/ulmart-logo-white.png", alt="logo")
 				//- a(href="https://www.ulmart.ru/", target="_blank") Перейти к покупкам на ulmart.ru
 				.header-text_wrap
-					h1.header-text_title Важные аксессуары для идеальных поездок
+					h1.header-text_title 
+						span Важные
+						|  аксессуары для идеальных поездок
 					p.header-text_desc Мало выбрать хороший велосипед — нужно подготовить его к любым сюрпризам на дороге. Чтобы любая ваша поездка доставляла максимум удовольствия и минимум проблем, рассказываем о самых нужных велосипедных аксессуарах. Прокачайте своего железного друга — и вперёд, к приключениям!
 	section.bicycle
 		.container
 			.row
-				.col-xs-12.col-sm-8
+				.col-xs-12.col-sm-12.col-md-8
 					.bicycle-btn_wrap
 						button.bicycle-btn.tab Аксессуары
 						button.bicycle-btn.tab2 Экипировка
@@ -31,7 +33,7 @@ body
 						.bicycle-parts.tab3
 							each item, number in data_c.slice(0,12)
 								+icons_c(item)
-				.col-xs-12.col-sm-4
+				.col-xs-12.col-sm-12.col-md-4
 					.owl-carousel.owl-theme(style="max-width: 360px;margin: 0 auto;")
 						each item, number in data.slice(0,14)
 							+carousel-item(item)
@@ -42,30 +44,70 @@ body
 
 	section.help
 		.container
-			.row
-				.col-xs-12.col-sm-9
-					h3.help-title Ещё не подобрали себе велосипед?  
-						small.help-title_small Отправьте ваши пожелания и мы подберем его для вас!
-				.col-xs-12.col-sm-3
-					a(href="#" class="help-btn") Отправить
+			.help-wrap
+				h3.help-title Ещё не подобрали себе велосипед?  
+					small.help-title_small Отправьте ваши пожелания и мы подберем его для вас!
+				a(href="#" class="help-btn") Отправить
 
 	section.access
 		.container
-			h2.access-title Дополнительные аксессуары
+			h2.access-title 
+				span Дополнительные
+				|  аксессуары
+			//- .row
+			//- 	each item, number in data2.slice(0,4)
+			//- 		+access(item)
+			//- .row
+			//- 	each item, number in data2.slice(4,7)
+			//- 		+access(item)
 			.row
-				each item, number in data2.slice(0,4)
-					+access(item)
+				.col-xs-12.col-sm-12.col-md-8
+					.access-cards
+						.access-cards_info
+							h2.access-cards_title Уход за велосипедом
+							p.access-cards_desc Для долгой службы. Позволяет ухаживать за велосипедом, обеспечивая чистоту и уменьшение износа механических деталей.
+							a.access-cards_btn(href="#") Выбрать
+						img(src="img/access-1.png", alt="")
+
+					.access-cards
+						img(src="img/access-2.png", alt="")
+						.access-cards_info
+							h2.access-cards_title Рога
+							p.access-cards_desc Для правильного распределения нагрузки. Позволят менять положение рук на руле и равномерно распределять нагрузку на плечи.
+							a.access-cards_btn(href="#") Выбрать
+				.col-xs-12.col-sm-12.col-md-4
+					.access-cards 
+						img(src="img/access-3.png", alt="")
+						.access-cards_info
+							h2.access-cards_title Крепление
+							p.access-cards_desc Для фиксации рамы и колёс. Позволяет надежно закрепить раму велосипеда благодаря регулируемому зажиму.
+							a.access-cards_btn(href="#") Выбрать
 			.row
-				each item, number in data2.slice(4,7)
-					+access(item)
+				.col-xs-12.col-sm-12.col-md-6
+					.access-cards
+						.access-cards_info
+							h2.access-cards_title Велоинструмент
+							p.access-cards_desc Для ремонта и настройки велосипеда. Благодаря компактным размерам и малому весу занимает минимум пространства.
+							a.access-cards_btn(href="#") Выбрать
+						img(src="img/access-4.png", alt="")
+				.col-xs-12.col-sm-12.col-md-6
+					.access-cards
+						.access-cards_info
+							h2.access-cards_title Детская защита
+							p.access-cards_desc Для безопасного и активного отдыха. Плотно облегает, удобно и быстро надевается и снимается. 
+							a.access-cards_btn(href="#") Выбрать
+						img(src="img/access-5.png", alt="")
 
 			a.access-btn(href="#") Смотреть все велоаксессуары
 
 	section.advice
 		.container
-			h3.advice-title Советы по подбору аксессуаров
-			each item, number in data3.slice(0,8)
-				+advice(item)
+			h3.advice-title 
+				span Советы
+				|  по подбору аксессуаров
+			.row
+				each item, number in data3.slice(0,9)
+					+advice(item)
 	+footer()
 
 

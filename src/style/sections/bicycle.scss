@@ -25,15 +25,15 @@
     }
   }
   &-accessories {
-      background: url(../img/main_bicycle.jpg) center bottom no-repeat;
+      background: url(../img/main_bicycleb.jpg) center bottom no-repeat;
       height: 586px;
   }
   &-equipment {
-      background: url(../img/main_bicycle2.jpg) center bottom no-repeat;
+      background: url(../img/main_bicycle2b.jpg) center bottom no-repeat;
       height: 586px;
   }
   &-parts {
-      background: url(../img/main_bicycle3.jpg) center bottom no-repeat;
+      background: url(../img/main_bicycle3b.jpg) center bottom no-repeat;
       height: 586px;
   }
   &-ico {
@@ -222,8 +222,8 @@
   font-weight: 400;
   margin-top: 25px;
   line-height: 1;
-  height: 6rem;
-  font-family: 'PFBeauSansPro-Regular', sans-serif;
+  height: 5rem;
+  font-family: 'pf_beausans_proregular', sans-serif;
 }
 
 .carousel-text {
@@ -275,3 +275,6 @@
 .owl-dots{
   display: none;
 }
+// .carousel-img_wrap {
+//   background: url(../img/slider-carousel_bg.png) center top no-repeat;
+// }

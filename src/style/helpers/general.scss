@@ -40,6 +40,7 @@ body, html {
   height: 100%;
   font-size: 16px;
   font-family: 'Roboto', Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -66,24 +67,30 @@ a {
 
 
 @font-face {
-	font-family: "PFBeauSansPro-SemiBold";
-	src: url("../fonts/PFBeauSansPro/PFBeauSansPro-SeBold.ttf") format("truetype");
-	font-weight: 600;
-	font-style: normal;
+    font-family: 'pf_beausans_prolight';
+    src: url('../fonts/pfbeausanspro-light-webfont.woff2') format('woff2'),
+         url('../fonts/pfbeausanspro-light-webfont.woff') format('woff'),
+         url('../fonts/pfbeausanspro-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: "PFBeauSansPro-Regular";
-	src: url("../fonts/PFBeauSansPro/PFBeauSansPro-Reg.ttf") format("truetype");
-	font-weight: 400;
-	font-style: normal;
+    font-family: 'pf_beausans_proregular';
+    src: url('../fonts/pfbeausanspro-reg-webfont.woff2') format('woff2'),
+         url('../fonts/pfbeausanspro-reg-webfont.woff') format('woff'),
+         url('../fonts/pfbeausanspro-reg-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'PFBeauSansPro-Light';
-	src: url("../fonts/PFBeauSansPro/PFBeauSansPro-Light.ttf") format("truetype");
-	font-weight: 300;
-	font-style: normal;
+    font-family: 'pf_beausans_prosemibold';
+    src: url('../fonts/pfbeausanspro-sebold-webfont.woff2') format('woff2'),
+         url('../fonts/pfbeausanspro-sebold-webfont.woff') format('woff'),
+         url('../fonts/pfbeausanspro-sebold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 // .layout_center_wrapper-project {
