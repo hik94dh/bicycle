@@ -39,8 +39,12 @@
 		animation: none !important;
 	}
 	.header {
+		background: #003BBF url(../img/banner-top_tablet.jpg) no-repeat;
+		background-size: cover;
+	}
+	.header {
 		&-text_wrap {
-			padding: 6.5rem 5px;
+			padding: 6.5rem 1rem;
 		}
 	}
 	.help {
@@ -77,6 +81,18 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.header {
+		background: #003BBF url(../img/banner-top_mobile.jpg) no-repeat;
+		background-size: cover;
+	}
+	.header-text_wrap {
+		padding: 17rem 10px 1.5rem;
+	}
+	.header-text_title {
+		font-size: 1.8rem;
+		line-height: 2rem;
+		padding-bottom: 1rem;
+	}
 	.owl-theme .owl-nav [class*=owl-] {
 		display: none !important;
 	}
@@ -201,4 +217,18 @@
  /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 
+}
+
+
+@media only screen and (min-width : 1930px) {
+	.header {
+		background: #003BBF url(../img/banner-top_2560.jpg) repeat-y;
+	}
+
+}
+
+@media only screen and (min-width : 48em) {
+	.container {
+		width: 100%;
+	}
 }

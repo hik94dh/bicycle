@@ -27,11 +27,11 @@
     &_info {
       padding: 2.7rem 2rem;
       // max-width: 470px;
-      flex-basis: 57%;
+      flex-basis: 55%;
       flex-grow: 1;
     }
-    img {
-      flex-grow: 1;
+    &_img {
+      
       border-radius: 10px;
     }
     &_title {
@@ -51,7 +51,7 @@
       min-height: 99px;
     }
     &_btn {
-      border-radius: 25px;
+      border-radius: 1.563rem;
       border: 2px solid #000;
       color: #000;
       font-family: Roboto;

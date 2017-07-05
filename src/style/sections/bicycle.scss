@@ -42,6 +42,10 @@
      height: 53px;
      display: inline-block;
      position: relative;
+     opacity: 0.7;
+     &:hover{
+      opacity: 1;
+     }
      &:focus {
       background: url(../img/ico-plus.png) no-repeat;
      }
@@ -246,7 +250,7 @@
   display: block;
   text-align: center;
   &:hover {
-    opacity: .8;
+    background-color: #004ed0;
   }
 }
 
