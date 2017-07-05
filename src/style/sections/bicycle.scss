@@ -18,7 +18,9 @@
     background-color: #fff;
     outline: none;
     &:hover {
-      cursor: pointer
+      cursor: pointer;
+      background-color: #004ed0;
+      color: #fff;
     }
     &_wrap {
       // text-align: center;
