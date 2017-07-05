@@ -1,6 +1,8 @@
 .header {
-  background: #003BBF url(../img/banner-top.jpg) repeat-y;
+  background: #003BBF url(../img/banner-top_2560.jpg) repeat-y;
   background-size: cover;
+  max-height: 560px;
+  height: 100%;
   &-wrap{
     // display: flex;
     // justify-content: space-between;
