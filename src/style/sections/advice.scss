@@ -58,7 +58,9 @@
       width: 280px;
       text-align: center;
       &:hover{
-        opacity: 0.8;
+        background-color: #004ed0;
+        border: 1px solid #004ed0;
+        color: #fff;
       }
     }
   }
