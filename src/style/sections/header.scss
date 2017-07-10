@@ -7,7 +7,7 @@
     // display: flex;
     // justify-content: space-between;
     // align-items: center;
-    padding-top: 14px;
+    padding-top: 10px;
     // background: url(../img/header-man.png) no-repeat;
     background-position: right top;
   }
@@ -64,4 +64,46 @@
     line-height: 24px;
   }
 
+}
+
+.header-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    // padding: 20px 0;
+    @include MQ(xs) {
+      // padding: 20px 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+  &__logo {
+    @include MQ(xs) {
+      margin: 0 auto;
+    }
+  }
+  &__shop {
+    // background: #c32a4b;
+    border: 1px solid #fff;
+    color: #fff;
+    opacity: .5;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px rgba(142,27,52,.5);
+    font-size: 0.75rem;
+    padding: 13px 0;
+    width: 215px;
+    @include MQ(xs) {
+      font-size: 1rem;
+      margin-top: 15px;
+      flex-grow: 1;
+    }
+    &:hover {
+      // background-color: #ff5534;
+      // background-image: -webkit-linear-gradient(#ff5534 0,#e4003a 100%);
+      // background-image: linear-gradient(#ff5534 0,#e4003a 100%);
+      opacity: 1
+    }
+  }
 }
