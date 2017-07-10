@@ -26,6 +26,7 @@
     }
     &_img {
       height: 230px;
+      text-align: center;
     }
 
     &_title {
@@ -55,7 +56,7 @@
       border: 1px solid #000;
       padding: 0.9rem 0;
       display: block;
-      width: 280px;
+      max-width: 280px;
       text-align: center;
       &:hover{
         background-color: #004ed0;
