@@ -17,7 +17,7 @@ tab.addEventListener("click", function(event){
 });
 
 tab2.addEventListener("click", function(event){
-    console.log('tab');
+    console.log('tab2');
     tab.classList.remove("active-b");
     tab3.classList.remove("active-b");
     tab2.classList.add("active-b");
@@ -27,7 +27,7 @@ tab2.addEventListener("click", function(event){
 });
 
 tab3.addEventListener("click", function(event){
-    console.log('tab');
+    console.log('tab3');
     tab.classList.remove("active-b");
     tab2.classList.remove("active-b");
     tab3.classList.add("active-b");

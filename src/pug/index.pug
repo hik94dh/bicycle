@@ -9,7 +9,7 @@ body
 			.header-wrap
 				.header-btn
 					a.header-btn__logo(href="https://www.ulmart.ru/", target="_blank")
-						img(src="img/ulmart-logo-white.png", alt="logo")
+						img(src=`${URL + 'ulmart-logo-white' + '.png'}`, alt="logo")
 					a.header-btn__shop(href="https://www.ulmart.ru/", target="_blank") Перейти к покупкам на ulmart.ru
 				.header-text_wrap
 					h1.header-text_title 
@@ -21,17 +21,17 @@ body
 			.row
 				.col-xs-12.col-sm-12.col-md-8
 					.bicycle-btn_wrap
-						button.bicycle-btn.tab Аксессуары
+						button.bicycle-btn.tab.active-b Аксессуары
 						button.bicycle-btn.tab2 Экипировка
-						button.bicycle-btn.active-b.tab3 Запчасти
+						button.bicycle-btn.tab3 Запчасти
 					.bicycle-wrap
-						.bicycle-accessories.none
+						.bicycle-accessories
 							each item, number in data.slice(0,14)
 								+icons(item)
 						.bicycle-equipment.none
 							each item, number in data_b.slice(0,4)
 								+icons_b(item)
-						.bicycle-parts.tab3
+						.bicycle-parts.tab3.none
 							each item, number in data_c.slice(0,12)
 								+icons_c(item)
 				.col-xs-12.col-sm-12.col-md-4
@@ -70,12 +70,12 @@ body
 							a.access-cards_btn(href="http://www.ulmart.ru/catalog/velozapcasti_1_27398_376758" target="_blank") Выбрать
 						.access-cards_img
 							a(href="http://www.ulmart.ru/catalog/velozapcasti_1_27398_376758" target="_blank")
-								img(src="img/access-1.png", width="330" alt="")
+								img(src=`${URL + 'access-' + '1' + '.png'}`, width="330" alt="")
 
 					.access-cards
 						.access-cards_img
 							a(href="https://www.ulmart.ru/catalog/95307_27398_307100" target="_blank")
-								img(src="img/access-2.png", width="300"  alt="")
+								img(src=`${URL + 'access-' + '2' + '.png'}`, width="300"  alt="")
 						.access-cards_info
 							h2.access-cards_title Рога
 							p.access-cards_desc Для правильного распределения нагрузки. Позволят менять положение рук на руле и равномерно распределять нагрузку на плечи.
@@ -84,7 +84,7 @@ body
 					.access-cards
 						.access-cards_img
 							a(href="http://www.ulmart.ru/catalog/kreplenia_dla_velosipedov_1?sort=0&viewType=1&rec=true" target="_blank")
-								img(src="img/access-3.png", width="379" alt="")
+								img(src=`${URL + 'access-' + '3' + '.png'}`, width="379" alt="")
 						.access-cards_info
 							h2.access-cards_title Крепление
 							p.access-cards_desc Для фиксации рамы и колёс. Позволяет надежно закрепить раму велосипеда благодаря регулируемому зажиму.
@@ -98,7 +98,7 @@ body
 							a.access-cards_btn(href="http://www.ulmart.ru/catalog/veloinstrumenty_1" target="_blank") Выбрать
 						.access-cards_img
 							a(href="http://www.ulmart.ru/catalog/veloinstrumenty_1" target="_blank")
-								img(src="img/access-4.png", width="219" alt="")
+								img(src=`${URL + 'access-' + '4' + '.png'}`, width="219" alt="")
 				.col-xs-12.col-sm-12.col-md-12.col-lg-6
 					.access-cards
 						.access-cards_info
@@ -107,7 +107,7 @@ body
 							a.access-cards_btn(href="https://www.ulmart.ru/catalog/zasita_slemy_nakolenniki_nalokotniki_naladonniki_1?sort=0&viewType=1&rec=true" target="_blank") Выбрать
 						.access-cards_img
 							a(href="https://www.ulmart.ru/catalog/zasita_slemy_nakolenniki_nalokotniki_naladonniki_1?sort=0&viewType=1&rec=true")
-								img(src="img/access-5.png", width="200" alt="")
+								img(src=`${URL + 'access-' + '5' + '.png'}`, width="200" alt="")
 
 			a.access-btn(href="http://www.ulmart.ru/catalog/veloaksessuary_1?sort=5&viewType=0&rec=true" target="_blank") Смотреть все велоаксессуары
 
