@@ -20,9 +20,13 @@
     border-radius: 10px;
     background-color: #fff;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 1rem;
+    &_vertical {
+      flex-direction: column;
+      max-height: 622px;
+      height: 100%;
+    }
 
     &_info {
       padding: 2.7rem 2rem;

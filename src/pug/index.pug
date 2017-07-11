@@ -55,12 +55,6 @@ body
 			h2.access-title 
 				span Дополнительные
 				|  аксессуары
-			//- .row
-			//- 	each item, number in data2.slice(0,4)
-			//- 		+access(item)
-			//- .row
-			//- 	each item, number in data2.slice(4,7)
-			//- 		+access(item)
 			.row
 				.col-xs-12.col-sm-12.col-md-12.col-lg-8
 					.access-cards
@@ -81,7 +75,7 @@ body
 							p.access-cards_desc Для правильного распределения нагрузки. Позволят менять положение рук на руле и равномерно распределять нагрузку на плечи.
 							a.access-cards_btn(href="https://www.ulmart.ru/catalog/95307_27398_307100" target="_blank") Выбрать
 				.col-xs-12.col-sm-12.col-md-12.col-lg-4
-					.access-cards
+					.access-cards.access-cards_vertical
 						.access-cards_img
 							a(href="http://www.ulmart.ru/catalog/kreplenia_dla_velosipedov_1?sort=0&viewType=1&rec=true" target="_blank")
 								img(src=`${URL + 'access-' + '3' + '.png'}`, width="379" alt="")
@@ -114,8 +108,8 @@ body
 	section.advice
 		.container
 			h3.advice-title 
-				span Советы
-				|  по подбору аксессуаров
+				span Что выбрать 
+				| в первую очередь?
 			.row
 				each item, number in data3.slice(0,9)
 					+advice(item)
