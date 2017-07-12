@@ -43,7 +43,7 @@
 	}
 	.header {
 		background: #003BBF url(https://fast.ulmart.ru/ns/verstka/bike-accessories/img/banner-top_tablet.jpg) no-repeat;
-		background-size: inherit;
+		background-size: cover;
 	}
 	.header {
 		&-text_wrap {
@@ -91,11 +91,11 @@
 @media only screen and (max-width : 480px) {
 	.header {
 		background: #003BBF url(https://fast.ulmart.ru/ns/verstka/bike-accessories/img/banner-top_mobile.jpg) no-repeat;
-		background-size: inherit;
+		background-size: cover;
 		min-height: 578px;
 	}
 	.header-text_wrap {
-		padding: 11.1rem 10px 1rem;
+		padding: 12.1rem 10px 1rem;
 	}
 	.header-text_title {
 		font-size: 1.5rem;

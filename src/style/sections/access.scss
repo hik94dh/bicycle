@@ -1,7 +1,7 @@
 .access {
   padding: 4.5rem  0 4.5rem;
-  background: url(../img/access-bg_left.png) no-repeat top left,
-              url(../img/access-bg_right.png) no-repeat top right,
+  background: url(https://fast.ulmart.ru/ns/verstka/bike-accessories/img/access-bg_left.png) no-repeat top left,
+              url(https://fast.ulmart.ru/ns/verstka/bike-accessories/img/access-bg_right.png) no-repeat top right,
               #f0f0f0;
   background-size: contain;
   &-title {
@@ -24,7 +24,7 @@
     justify-content: space-around;
     margin-bottom: 1rem;
     &_vertical {
-      flex-direction: column;
+      // flex-direction: column;
       // max-height: 622px;
       // height: 100%;
     }

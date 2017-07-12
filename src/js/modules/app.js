@@ -37,3 +37,100 @@ tab3.addEventListener("click", function(event){
 });
 
 
+function pushStateToDataLayerLogo(event) {
+    return function(label, location) {
+            dataLayer.push({
+                    'event':'OWOX',
+                    'eventCategory': 'Interactions',
+                    'eventAction': 'click',
+                    'eventLabel': label,
+                    'eventContent': event.target.innerHTML.trim(),
+                    'eventLocation': location
+            });
+            console.log('click logo');
+    }
+};
+
+function pushStateToDataLayerUlmart(event) {
+    return function(label, location) {
+            dataLayer.push({
+                    'event':'OWOX',
+                    'eventCategory': 'Interactions',
+                    'eventAction': 'click',
+                    'eventLabel': label,
+                    'eventContent': event.target.innerHTML.trim(),
+                    'eventLocation': location
+            });
+            console.log('click go to Ulmart');
+    }
+};
+
+function pushStateToDataLayerSelectProduct(event) {
+    return function(label, location) {
+            dataLayer.push({
+                    'event':'OWOX',
+                    'eventCategory': 'Interactions',
+                    'eventAction': 'click',
+                    'eventLabel': label,
+                    'eventContent': event.target.innerHTML.trim(),
+                    'eventLocation': location
+            });
+            console.log('click to SelectProduct');
+    }
+};
+
+function pushStateToDataLayerProductSlider(event) {
+    return function(label, location) {
+            dataLayer.push({
+                    'event':'OWOX',
+                    'eventCategory': 'Interactions',
+                    'eventAction': 'click',
+                    'eventLabel': label,
+                    'eventContent': event.target.innerHTML.trim(),
+                    'eventLocation': location
+            });
+            console.log('click to ProductSlider');
+    }
+};
+
+function pushStateToDataLayerCategory(event) {
+    return function(label, location) {
+            dataLayer.push({
+                    'event':'OWOX',
+                    'eventCategory': 'Interactions',
+                    'eventAction': 'click',
+                    'eventLabel': label,
+                    'eventContent': event.target.innerHTML.trim(),
+                    'eventLocation': location
+            });
+            console.log('click to Category');
+    }
+};
+
+function pushStateToDataLayerHelpSelection(event) {
+    return function(label, location) {
+            dataLayer.push({
+                    'event':'OWOX',
+                    'eventCategory': 'Interactions',
+                    'eventAction': 'click',
+                    'eventLabel': label,
+                    'eventContent': event.target.innerHTML.trim(),
+                    'eventLocation': location
+            });
+            console.log('click to HelpSelection');
+    }
+};
+
+function pushStateToDataLayerClickAdvice(event) {
+    return function(label, location) {
+            dataLayer.push({
+                    'event':'OWOX',
+                    'eventCategory': 'Interactions',
+                    'eventAction': 'click',
+                    'eventLabel': label,
+                    'eventContent': event.target.innerHTML.trim(),
+                    'eventLocation': location
+            });
+            console.log('click to ClickAdvice');
+    }
+};
