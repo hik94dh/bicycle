@@ -66,14 +66,15 @@ function pushStateToDataLayerUlmart(event) {
 };
 
 function pushStateToDataLayerSelectProduct(event) {
-    return function(label, location) {
+    return function(label, location, id) {
             dataLayer.push({
                     'event':'OWOX',
                     'eventCategory': 'Interactions',
                     'eventAction': 'click',
                     'eventLabel': label,
                     'eventContent': event.target.innerHTML.trim(),
-                    'eventLocation': location
+                    'eventLocation': location,
+                    'eventContext': id
             });
             console.log('click to SelectProduct');
     }
